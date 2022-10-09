@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const NavContainer = styled.div`
+const Wrapper = styled.div`
   height: 3.2rem;
   background-color: #003580;
   display: flex;
   justify-content: center;
 `
 
-const NavWrapper = styled.div`
+const Container = styled.div`
   width: 100%;
   max-width: 1024px;
   color: #fff;
@@ -41,15 +41,15 @@ interface IProps {}
 export default class Navbar extends React.Component<IProps> {
   render() {
     return (
-      <NavContainer>
-        <NavWrapper>
+      <Wrapper>
+        <Container>
           <Logo>Booking.com</Logo>
           <NavItems>
             <NavButton>Register</NavButton>
             <NavButton>Sign in</NavButton>
           </NavItems>
-        </NavWrapper>
-      </NavContainer>
+        </Container>
+      </Wrapper>
     )
   }
 }
